@@ -1,6 +1,6 @@
 function ProductCard({ product, addToCart }) {
     return (
-        <article className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl shadow-black/20">
+        <article className="overflow-hidden rounded-lg border border-white/10 bg-white/5 shadow-2xl shadow-black/20">
             <img
                 src={product.image}
                 alt={product.name}
@@ -24,7 +24,7 @@ function ProductCard({ product, addToCart }) {
                 <button
                     type="button"
                     onClick={() => addToCart(product)}
-                    className="w-full rounded-2xl bg-amber-400 px-4 py-3 font-semibold text-stone-950 transition hover:bg-amber-300"
+                    className="w-full rounded-lg bg-amber-400 px-4 py-3 font-semibold text-stone-950 transition hover:bg-amber-300"
                 >
                     Add to Cart
                 </button>
